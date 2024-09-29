@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    background-color: rgb(244, 162, 38);
+    font-family: "Monoton", sans-serif;
+    font-size:4rem;
+}
+
+.input_Form{
+    background-color:rgb(229, 119, 31) ;
+}
+
+.btn_add{
+    background-color: #76c7ad;
+}
+
+
+i{
+    cursor: pointer;
+}
+
+.lists{
+    background-color: #5a3e2b;
+}
+.alertContainer{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.red{
+    background-color: #ff6723;
+}
+.yellow{
+    background-color: #fcd53f;
+}
+.green{
+    background-color: #00d26a;
+}
+.lists .container{
+    overflow-x: auto;
+}
+#alertMsg{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+@media(max-width: 767px){
+    #alertMsg{
+        font-size: 14px;
+    }
+}

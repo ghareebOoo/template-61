@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/all.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Trip</title>
+</head>
+
+<body>
+  <div class="page">
+    <h1 class="text-center py-4 mb-0">🌴 Far away 💼</h1>
+
+    <div class="input_Form">
+      <div class="container d-flex py-4 flex-column flex-md-row">
+        <label for="item_value text-center" class="h3">What do you need for your 😍 trip ?</label>
+        <input id="itemName" class="form-control w-100 w-md-25 w-lg-50 ms-lg-4 me-1" type="text" placeholder="Item..." />
+        <button class="btn btn_add d-block">Add</button>
+        <button class="btn bg-warning d-none">Update</button>
+      </div>
+    </div>
+  
+  
+    <div class="lists py-4">
+      <input id="searchInput" type="search" class="form-control w-50 mx-auto mb-4" placeholder="search item " />
+      <div class="container">
+        <table class="table text-white text-center">
+          <thead>
+            <th>Index</th>
+            <th>Item</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </thead>
+          <tbody id="data">
+      
+          </tbody>
+        </table>
+      </div>
+      <p class="h5 py-4 text-white w-100 w-md-25 text-center"></p>
+    </div>
+  </div>
+
+
+  <div class="alertContainer position-fixed top-0 end-0 start-0 bottom-0 pt-4 d-none">
+    <div class="alertItem w-75 mx-auto bg-white rounded-3">
+      <div class="head d-flex justify-content-between border-bottom p-4">
+        <div class="d-flex gap-2">
+          <div class="circle red"></div>
+          <div class="circle yellow"></div>
+          <div class="circle green"></div>
+        </div>
+        <i id="close" class="fa-solid fa-x"></i>
+      </div>
+      <p id="alertMsg" class="ps-4 py-3"></p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
